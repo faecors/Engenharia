@@ -1,0 +1,32 @@
+def contar_divisores(n):
+    divisores_pares = 0
+    divisores_impares = 0
+
+    for i in range(1, n+1):
+        if n % i == 0:
+            if i % 2 == 0:
+                divisores_pares += 1
+            else:
+                divisores_impares += 1
+
+    return divisores_pares, divisores_impares
+
+# Solicitar valor de 'n' ao usuário
+n = int(input("Digite um número inteiro positivo: "))
+
+# Calcular o número de divisores pares e ímpares
+pares, impares = contar_divisores(n)
+
+# Imprimir os resultados
+print(f"O número {n} tem {pares} divisores pares e {impares} divisores ímpares.")
+Neste código, a função contar_divisores recebe o valor n como entrada e utiliza um loop for para verificar todos os números de 1 a n. Se n for divisível por um determinado número i, verificamos se i é par ou ímpar e incrementamos as contagens apropriadas. No final, a função retorna o número de divisores pares e ímpares.
+
+Em seguida, solicitamos ao usuário que digite o valor de n, chamamos a função contar_divisores passando esse valor e, finalmente, exibimos os resultados na tela.
+
+Espero que isso ajude! Se você tiver alguma dúvida adicional, por favor, me avise.
+
+
+
+
+
+Regenerate response
